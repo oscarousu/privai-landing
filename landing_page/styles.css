@@ -216,6 +216,88 @@ footer {
     padding: 3rem 5%;
 }
 
+/* Contact Section & Form */
+.contact-section {
+    padding: 5rem 5%;
+    background-color: var(--bg-color);
+}
+
+.contact-container {
+    max-width: 900px;
+    margin: 0 auto;
+    display: flex;
+    gap: 4rem;
+    align-items: center;
+}
+
+.contact-info {
+    flex: 1;
+}
+
+.contact-info h2 {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+.contact-info p {
+    color: #475569;
+    font-size: 1.1rem;
+}
+
+.contact-form {
+    flex: 1;
+    background: white;
+    padding: 2.5rem;
+    border-radius: 8px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.form-group label {
+    font-weight: 600;
+    color: var(--primary-color);
+    font-size: 0.9rem;
+}
+
+.form-group input {
+    padding: 0.75rem 1rem;
+    border: 1px solid #CBD5E1;
+    border-radius: 4px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+}
+
+.form-group input:focus {
+    outline: none;
+    border-color: var(--accent-color);
+}
+
+.submit-btn {
+    width: 100%;
+    margin-top: 1rem;
+    font-size: 1.1rem;
+    padding: 1rem;
+}
+
+.form-status {
+    text-align: center;
+    font-weight: 600;
+    margin-top: 0.5rem;
+    min-height: 20px;
+}
+
+.form-status.success { color: #10B981; }
+.form-status.error { color: #EF4444; }
+
 /* Animations */
 .fade-in {
     opacity: 0;
