@@ -31,6 +31,18 @@ document.addEventListener('DOMContentLoaded', () => {
         document.querySelector('.hero').classList.add('appear');
     }, 100);
 
+    // Chat Animation Logic
+    const aiResponse = document.getElementById('ai-response');
+    if (aiResponse) {
+        setTimeout(() => {
+            aiResponse.classList.add('visible');
+            // Remove typing indicator after 2 seconds and add text
+            setTimeout(() => {
+                aiResponse.innerHTML = "Según el manual técnico (Pág 14), el par de apriete nominal para el motor V8 en operación continua es de <strong>45 Nm</strong>.<br><br><small><em>Fuente: Manual_Mantenimiento_V8.pdf</em></small>";
+            }, 2500);
+        }, 1200);
+    }
+
     // Form Handling
     const form = document.getElementById('privai-form');
     const result = document.getElementById('form-status');
